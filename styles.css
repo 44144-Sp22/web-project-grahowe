@@ -1,8 +1,52 @@
 body {
   background-color: #0033aa;
   font-family: sans-serif, Arial, "Times New Roman";
+
 }
 
 header{
-  background-color: #0040ee;
+  background-color: #ffffff;
+  background-image: url(symbol.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  margin:0px;
+  height: 128px;
+}
+
+nav{
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  float: left;
+  width: 130px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav a{
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+
+footer {
+  font-size: 60%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  clear: both;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #c745ff;
+  color: #000000;
+  min-width: 960px;
+  max-width: 1200px;
 }
