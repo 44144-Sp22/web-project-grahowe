@@ -9,29 +9,21 @@ header{
   background-image: url(symbol.jpg);
   background-position: right;
   background-repeat: no-repeat;
+  text-align: center;
   margin:0px;
   height: 128px;
 }
 
-nav{
+nav {
+  padding-top: .5em;
+  padding-bottom: .5em;
   font-weight: bold;
-  letter-spacing: 0.2em;
-  float: left;
-  width: 130px;
-}
-
-nav ul{
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  background-color: #000000;
+  text-align: center;
 }
 
 nav a{
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
   text-decoration: none;
-  padding: 20px;
-  display: block;
 }
 
 footer {
@@ -42,8 +34,14 @@ footer {
   clear: both;
 }
 
+main {
+  padding: 1px 10px 20px 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
 #wrapper {
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
   background-color: #c745ff;
   color: #000000;
