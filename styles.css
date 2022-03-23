@@ -1,42 +1,59 @@
-body {
-  background-image: linear-gradient(to bottom, #0033FF, #C2E0F0, #0033FF);
-  font-family: sans-serif, Arial, "Times New Roman";
+* {
+  box-sizing: border-box;
+}
 
+body {
+  background-image: linear-gradient(to bottom, #17252A, #EFFFFF, #17252A);
+  font-family: Georgia, Arial, "Times New Roman";
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 960px;
+  max-width: 1024px;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 header {
-  background-color: #909090;
-  background-image: url(symbol.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  text-align: center;
-  margin: 0px;
-  height: 130px;
+  background-color: #3AAFA9;
+  color: #000000;
+  font-size: 200%;
+  padding: 15px 15px 15px 160px;
 }
 
 nav {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  float: right;
+  width: 200px;
   font-weight: bold;
+  letter-spacing: 0.2em;
   background-color: #000000;
-  text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 nav a {
   text-decoration: none;
   margin: 20px;
+  display: block;
+  background-color: #000000;
 }
 
 nav a:link {
-  color: #0033FF;
+  color: #FFFFFF;
 }
 
 nav a:visited {
-  color: #ffffff;
+  color: #919191;
 }
 
 nav a:focus, nav a:hover {
-  color: #808080;
+  color: #FFFF00;
 }
 
 nav a:active {
@@ -47,23 +64,16 @@ footer {
   font-size: 60%;
   text-align: center;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #919191;
   clear: both;
 }
 
 main {
-  padding: 1px 10px 20px 20px;
-  background-color: #ffffff;
+  background-color: #f4ffff;
   color: #000000;
-}
-
-#wrapper {
-  margin: auto;
-  width: 80%;
-  background-color: #c745ff;
-  color: #000000;
-  min-width: 960px;
-  max-width: 1200px;
+  padding: 10px 20px;
+  display: block;
+  overflow: auto;
 }
 
 aside {
@@ -76,6 +86,10 @@ aside {
 	position: relative;
 	top: -40px;
 	margin-right: 40px;
+}
+
+main li{
+  display: inline-block;
 }
 
 @media only screen and (max-width: 1024px){
@@ -102,7 +116,6 @@ aside {
 	}
 	h1, h2, h3 {
 		font-size: 120%;
-    text-align: center;
 	}
 	p {
 		font-size: 90%;
@@ -116,6 +129,9 @@ aside {
 	#wrapper {
 		min-width: auto;
 	}
+  header {
+    padding: 10px;
+  }
 	h1, h2, h3 {
 		font-size: 100%;
     text-align: center;
@@ -134,6 +150,9 @@ aside {
 	nav img {
 		display: none;
 	}
+  img {
+    padding: 10px 10px 10px 10px;
+  }
   aside {
     margin-top: 50px;
     margin-bottom: 10px;
